@@ -14,15 +14,13 @@ Example questions:
 
 ## Installation
 
+The package is on Packagist: [sparkable/magento-mago-bulk-update](https://packagist.org/packages/sparkable/magento-mago-bulk-update).
+
 ```
-composer config repositories.sparkable-mago-product-finder vcs https://github.com/sparkable-agency/mago-product-finder
-composer config repositories.sparkable-mago-bulk-update vcs https://github.com/sparkable-agency/mago-bulk-update
 composer require sparkable/magento-mago-bulk-update
 bin/magento module:enable Sparkable_MagoProductFinder Sparkable_MagoBulkUpdate
 bin/magento setup:upgrade
 ```
-
-The `composer config` lines add the GitHub repositories of this package and of the product finder package it needs.
 
 The module needs `sparkable/magento-mago-product-finder`. Composer installs it.
 
