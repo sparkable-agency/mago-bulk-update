@@ -1,6 +1,6 @@
 # Mago Bulk Update
 
-A tool for the [Mago](https://github.com/mago-assistant/magento2-mago) admin assistant. It changes one attribute on many products at once, and adds options to a dropdown attribute.
+A tool for the [Mago](https://packagist.org/packages/mago-assistant/magento2-mago) admin assistant. It changes one attribute on many products at once, and adds options to a dropdown attribute.
 
 | Action | What it does |
 | --- | --- |
@@ -15,10 +15,14 @@ Example questions:
 ## Installation
 
 ```
+composer config repositories.sparkable-mago-product-finder vcs https://github.com/sparkable-agency/mago-product-finder
+composer config repositories.sparkable-mago-bulk-update vcs https://github.com/sparkable-agency/mago-bulk-update
 composer require sparkable/magento-mago-bulk-update
 bin/magento module:enable Sparkable_MagoProductFinder Sparkable_MagoBulkUpdate
 bin/magento setup:upgrade
 ```
+
+The `composer config` lines add the GitHub repositories of this package and of the product finder package it needs.
 
 The module needs `sparkable/magento-mago-product-finder`. Composer installs it.
 

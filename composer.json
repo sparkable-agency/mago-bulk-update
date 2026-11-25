@@ -3,7 +3,7 @@
     "description": "Mago Assistant tool that sets attribute values on many products and adds attribute options",
     "type": "magento2-module",
     "license": "MIT",
-    "version": "1.0.0",
+    "homepage": "https://github.com/sparkable-agency/mago-bulk-update",
     "require": {
         "php": "^8.3",
         "mago-assistant/magento2-mago": "^1.1",
