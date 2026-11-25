@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="MagoAssistant\Mago\Service\Tool\ToolRegistry">
+        <arguments>
+            <argument name="tools" xsi:type="array">
+                <item name="sparkable_bulk_update" xsi:type="object">Sparkable\MagoBulkUpdate\Service\Tool\BulkUpdate</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Sparkable\MagoBulkUpdate\Service\Tool\BulkUpdate">
+        <arguments>
+            <argument name="actions" xsi:type="array">
+                <item name="update_products" xsi:type="object">Sparkable\MagoBulkUpdate\Service\Tool\BulkUpdate\UpdateProductsAction</item>
+                <item name="add_attribute_options" xsi:type="object">Sparkable\MagoBulkUpdate\Service\Tool\BulkUpdate\AddAttributeOptionsAction</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
